@@ -9,9 +9,9 @@ const likesRouter = require("./likes");
 const { authentication } = require("../middlewares/authn");
 const { Controller } = require("../controllers");
 
-router.get("/", (req, res) => {
-  res.send("masuk");
-});
+// router.get("/", (req, res) => {
+//   res.send("masuk");
+// });
 
 router.post("/register", Controller.register);
 router.post("/login", Controller.login);
