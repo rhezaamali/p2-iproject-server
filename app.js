@@ -11,6 +11,10 @@ const { errorHandler } = require("./middlewares/errorHandler");
 // router import
 const router = require("./routes");
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
