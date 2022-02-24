@@ -10,7 +10,7 @@ const { authentication } = require("../middlewares/authn");
 const { Controller } = require("../controllers");
 
 router.get("/", (req, res) => {
-  res.send("masuk");
+  res.send("Hello world");
 });
 
 router.post("/register", Controller.register);
